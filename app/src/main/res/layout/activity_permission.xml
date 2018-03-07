@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RxjavaActivity">
+    <Button
+        android:id="@+id/btnGetCa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="获取相机权限"/>
+    <Button
+        android:id="@+id/btnGetPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="获取电话权限"/>
+    <Button
+        android:id="@+id/btnGetAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="获取所有权限"/>
+    <Button
+        android:id="@+id/btnGetNetworkstate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="获取网络状态"/>
+</LinearLayout>
