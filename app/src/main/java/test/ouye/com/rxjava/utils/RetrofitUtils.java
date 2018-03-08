@@ -1,4 +1,4 @@
-package test.ouye.com.rxjava.util;
+package test.ouye.com.rxjava.utils;
 
 import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava.RxJavaCallAdapterFactory;
@@ -9,17 +9,17 @@ import retrofit2.converter.gson.GsonConverterFactory;
  * Created by bjh on 2018/3/6.
  */
 
-public class RetrofitUtil {
+public class RetrofitUtils {
     private Retrofit mRetrofit;
     private String baseUrl;
-    private static RetrofitUtil mRetrofitManager;
-    private RetrofitUtil(String baseUrl){
+    private static RetrofitUtils mRetrofitManager;
+    private RetrofitUtils(String baseUrl){
         this.baseUrl=baseUrl;
         initRetrofit();
     }
-    public static synchronized RetrofitUtil getInstance(String baseUrl){
+    public static synchronized RetrofitUtils getInstance(String baseUrl){
         if (mRetrofitManager == null){
-            mRetrofitManager = new RetrofitUtil(baseUrl);
+            mRetrofitManager = new RetrofitUtils(baseUrl);
         }
         return mRetrofitManager;
     }

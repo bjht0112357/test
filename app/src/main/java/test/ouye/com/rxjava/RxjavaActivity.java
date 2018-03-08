@@ -8,7 +8,7 @@ import rx.android.schedulers.AndroidSchedulers;
 import rx.schedulers.Schedulers;
 import test.ouye.com.rxjava.bean.User;
 import test.ouye.com.rxjava.network.ApiService;
-import test.ouye.com.rxjava.util.RetrofitUtil;
+import test.ouye.com.rxjava.utils.RetrofitUtils;
 
 public class RxjavaActivity extends AppCompatActivity {
 
@@ -16,7 +16,7 @@ public class RxjavaActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rxjava);
-        ApiService apiService = RetrofitUtil.getInstance("").setCreate(ApiService.class);
+        ApiService apiService = RetrofitUtils.getInstance("").setCreate(ApiService.class);
         apiService.getUserInfo("18959261248", "123456").subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(new Subscriber<User>() {

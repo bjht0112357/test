@@ -1,4 +1,4 @@
-package test.ouye.com.rxjava.util;
+package test.ouye.com.rxjava.utils;
 
 import android.content.Context;
 import android.net.ConnectivityManager;
@@ -12,7 +12,7 @@ import test.ouye.com.rxjava.MyApplication;
  * Created by bjh on 2018/3/7.
  */
 
-public class NetUtil {
+public class NetUtils {
     private static Context context = MyApplication.getInstance().getApplicationContext();
 
     /**

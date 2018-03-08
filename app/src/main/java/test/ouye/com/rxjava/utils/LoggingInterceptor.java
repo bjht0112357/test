@@ -1,4 +1,4 @@
-package test.ouye.com.rxjava.util;
+package test.ouye.com.rxjava.utils;
 
 import android.util.Log;
 
